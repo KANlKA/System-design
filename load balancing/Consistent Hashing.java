@@ -1,5 +1,4 @@
 package algorithms;
-
 import models.Node;
 import models.Request;
 
@@ -10,6 +9,7 @@ import java.util.concurrent.ConcurrentSkipListMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.function.Function;
 
+//LOAD BALANCING ALGO
 public class ConsistentHashing implements Router {
     private final Map<Node, List<Long>> nodePositions;//list of all virtual node positions so we know when a node is added or removed, the exact pos it was associated with
     private final ConcurrentSkipListMap<Long, Node> nodeMappings;//ConcurrentSkipListMap automatically keeps keys sorted because consistent hashing always searches for the next greater hash value
