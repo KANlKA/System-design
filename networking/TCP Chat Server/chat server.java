@@ -80,7 +80,7 @@ public class ChatServer {
         }
     }
 }
-//Server starts
+/*Server starts
       ↓
 Create ServerSocket
       ↓
@@ -105,3 +105,4 @@ Client quits
 Remove from set
       ↓
 Close socket
+*/
